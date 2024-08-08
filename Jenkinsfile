@@ -9,11 +9,11 @@ pipeline{
                 git branch:'main', url: 'https://github.com/mgidw/test.git'
             }
          }        
-//        stage('Build'){
-//             steps{
-//                 sh 'mvn clean package'
-//             }
-//          }
+        stage('Build'){
+             steps{
+                 sh 'mvn clean package'
+             }
+          }
        
         }
         }
